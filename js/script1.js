@@ -164,7 +164,7 @@ function varupdate() {
 }
 
 function movetoTop() {
-  const firstDiv = document.querySelector("#simulation");
+  const firstDiv = document.querySelector("#variables");
   if (firstDiv) {
     firstDiv.scrollIntoView({ behavior: "smooth" });
   }
@@ -181,4 +181,27 @@ function openSidebar() {
   } else {
     // btnSide.textContent = "◀";
   }
+}
+
+const btnInfo = document.querySelector(".btn-info");
+btnInfo.addEventListener("click", openInfo);
+btnInfo.addEventListener("touch", openInfo);
+function openInfo() {
+  console.log("Info clicked");
+  const info = document.querySelector(".info");
+  if (info.classList.contains("hide")) {
+    info.classList.remove("hide");
+    info.classList.add("flex");
+    btnInfo.textContent = "X";
+  } else {
+    info.classList.remove("flex");
+    info.classList.add("hide");
+    btnInfo.textContent = "ℹ";
+  }
+}
+
+function closeInfo() {
+  info.classList.remove("flex");
+  info.classList.add("hide");
+  btnInfo.textContent = "ℹ";
 }

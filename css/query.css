@@ -78,7 +78,7 @@ em:current font size
     flex-direction: column;
   }
   .btn-top{
-    visibility: hidden;
+    /* visibility: hidden; */
   }
   .title-div h1 {
     font-size: 2rem;
@@ -104,6 +104,15 @@ em:current font size
   }
   .btn-side{
     display: none;
+  }
+
+  #canvas-container{
+    height: auto;
+
+  }
+
+  .btn-info{
+    z-index: 101;
   }
   .tool-menu {
     list-style: none;

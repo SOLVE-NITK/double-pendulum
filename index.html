@@ -254,102 +254,121 @@
               ↔
             </button>
           </div>
-          <div id="variables" class="main__task-div">
-            <div class="settings-sections">
-              <h3 class="task-title">Variables</h3>
-              <div
-                class="variables-sections"
-                style="opacity: 0.5; pointer-events: none"
-              >
-                <div class="var-div">
-                  <div class="input-container">
-                    <label for="fSpinner">l<sub>1</sub></label>
-                    <input
-                      class="var-spinner"
-                      id="fSpinner"
-                      name="value"
-                      readonly
-                    />
-                    <span>m</span>
+          <div class="additional-div main__task-div">
+            <div id="variables">
+              <div class="settings-sections">
+                <h3 class="task-title" id="variables">Variables</h3>
+                <div
+                  class="variables-sections"
+                  style="opacity: 0.5; pointer-events: none"
+                >
+                  <div class="var-div">
+                    <div class="input-container">
+                      <label for="fSpinner">l<sub>1</sub></label>
+                      <input
+                        class="var-spinner"
+                        id="fSpinner"
+                        name="value"
+                        readonly
+                      />
+                      <span>m</span>
+                    </div>
+                    <div class="var-slider" id="fSlider"></div>
                   </div>
-                  <div class="var-slider" id="fSlider"></div>
-                </div>
-                <div class="var-div">
-                  <div class="input-container">
-                    <label for="omegaSpinner">l<sub>2</sub></label>
-                    <input
-                      class="var-spinner"
-                      id="omegaSpinner"
-                      name="value"
-                      readonly
-                    />
-                    <span>m</span>
+                  <div class="var-div">
+                    <div class="input-container">
+                      <label for="omegaSpinner">l<sub>2</sub></label>
+                      <input
+                        class="var-spinner"
+                        id="omegaSpinner"
+                        name="value"
+                        readonly
+                      />
+                      <span>m</span>
+                    </div>
+                    <div class="var-slider" id="omegaSlider"></div>
                   </div>
-                  <div class="var-slider" id="omegaSlider"></div>
-                </div>
-                <div class="var-div">
-                  <div class="input-container">
-                    <label for="k1Spinner">θ<sub>1</sub></label>
-                    <input
-                      class="var-spinner"
-                      id="k1Spinner"
-                      name="value"
-                      readonly
-                    />
-                    <span>degrees</span>
+                  <div class="var-div">
+                    <div class="input-container">
+                      <label for="k1Spinner">θ<sub>1</sub></label>
+                      <input
+                        class="var-spinner"
+                        id="k1Spinner"
+                        name="value"
+                        readonly
+                      />
+                      <span>degrees</span>
+                    </div>
+                    <div class="var-slider" id="k1Slider"></div>
                   </div>
-                  <div class="var-slider" id="k1Slider"></div>
-                </div>
-                <div class="var-div">
-                  <div class="input-container">
-                    <label for="m1Spinner">m<sub>1</sub></label>
-                    <input
-                      class="var-spinner"
-                      id="m1Spinner"
-                      name="value"
-                      readonly
-                    />
-                    <span>kg</span>
+                  <div class="var-div">
+                    <div class="input-container">
+                      <label for="m1Spinner">m<sub>1</sub></label>
+                      <input
+                        class="var-spinner"
+                        id="m1Spinner"
+                        name="value"
+                        readonly
+                      />
+                      <span>kg</span>
+                    </div>
+                    <div class="var-slider" id="m1Slider"></div>
                   </div>
-                  <div class="var-slider" id="m1Slider"></div>
-                </div>
-                <div class="var-div">
-                  <div class="input-container">
-                    <label for="k2Spinner">θ<sub>2</sub></label>
-                    <input
-                      class="var-spinner"
-                      id="k2Spinner"
-                      name="value"
-                      readonly
-                    />
-                    <span>degrees</span>
+                  <div class="var-div">
+                    <div class="input-container">
+                      <label for="k2Spinner">θ<sub>2</sub></label>
+                      <input
+                        class="var-spinner"
+                        id="k2Spinner"
+                        name="value"
+                        readonly
+                      />
+                      <span>degrees</span>
+                    </div>
+                    <div class="var-slider" id="k2Slider"></div>
                   </div>
-                  <div class="var-slider" id="k2Slider"></div>
-                </div>
-                <div class="var-div">
-                  <div class="input-container">
-                    <label for="m2Spinner">m<sub>2</sub></label>
-                    <input
-                      class="var-spinner"
-                      id="m2Spinner"
-                      name="value"
-                      readonly
-                    />
-                    <span>kg</span>
+                  <div class="var-div">
+                    <div class="input-container">
+                      <label for="m2Spinner">m<sub>2</sub></label>
+                      <input
+                        class="var-spinner"
+                        id="m2Spinner"
+                        name="value"
+                        readonly
+                      />
+                      <span>kg</span>
+                    </div>
+                    <div class="var-slider" id="m2Slider"></div>
                   </div>
-                  <div class="var-slider" id="m2Slider"></div>
                 </div>
               </div>
+              <div class="settings-sections">
+                <h3 class="task-title">Additional Details</h3>
+
+                <div class="info">
+                  <p>l<sub>1</sub> = Length of Pendulum 1</p>
+                  <p>l<sub>2</sub> = Length of Pendulum 2</p>
+                  <p>m<sub>1</sub> = Mass of Pendulum 1</p>
+                  <p>m<sub>2</sub> = Mass of Pendulum 2</p>
+                  <p>&theta;<sub>1</sub> = Angle of Pendulum 1</p>
+                  <p>&theta;<sub>2</sub> = Angle of Pendulum 2</p>
+                  <p>&omega;<sub>1</sub> = First natural frequency of system</p>
+                  <p>
+                    &omega;<sub>2</sub> = Second natural frequency of system
+                  </p>
+                </div>
+              </div>
+
+              <button
+                id="var-top"
+                class="btn btn-top"
+                title="Move to Top"
+                onclick="movetoTop()"
+                ontouchstart="movetoTop"
+              >
+                ↑
+              </button>
             </div>
-            <button
-              id="var-top"
-              class="btn btn-top hide"
-              title="Move to Top"
-              onclick="movetoTop()"
-              ontouchstart="movetoTop"
-            >
-              ↑
-            </button>
           </div>
         </div>
         <div class="main__task-div footer">

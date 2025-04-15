@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
-  /* height: 100vh; */
+  height: 95vh;
 }
 .title-div-container {
   width: 100%;
@@ -182,7 +182,7 @@ h1 {
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* min-height: 80vh; */
+  height: 100%;
 }
 
 .main__task-div {
@@ -266,14 +266,15 @@ h1 {
   gap: 0;
   flex-wrap: wrap;
   flex-direction: row;
-  height: auto;
+  height: 100%;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
 #canvas-container {
   grid-column: 1/-1;
   width: 100%;
-  max-height: max-content;
+  /* height: 70vh; */
+  /* max-height: max-content; */
 }
 #canvas {
   border-left: 1px solid rgba(177, 176, 176, 0.855);
@@ -341,6 +342,7 @@ h1 {
 .settings-sections {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .variables-sections {
@@ -438,7 +440,11 @@ h1 {
 
 .flex {
   display: flex;
-  width: auto;
+  flex-direction: column;
+  /* width: 100%; */
+}
+.block {
+  display: block;
 }
 
 @keyframes openSidebar {
@@ -456,9 +462,18 @@ h1 {
 }
 
 .page2 {
-  display: flex;
   flex-direction: column;
   gap: 2;
   padding: 0.5rem;
   height: 100%;
+}
+
+.additional-div {
+  overflow: scroll;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
